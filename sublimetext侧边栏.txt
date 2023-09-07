@@ -1,0 +1,48 @@
+touch contracts/Election.sol
+
+touch contracts/Election.sol您好，这是Bing。我可以帮您在Sublime Text中创建一个新的合约文件。您可以按照以下步骤操作：
+
+- 首先，您需要下载并安装Sublime Text编辑器。您可以从[官网](^1^)或者[这里](^2^)下载最新版本的Sublime Text 4或者Sublime Text 3。
+- 然后，您需要打开Sublime Text，并在菜单栏中选择File -> Open Folder...，然后选择您的合约目录。这样，您就可以在侧边栏中看到您的合约文件和文件夹。
+- 接下来，您需要在侧边栏中右键点击您想要创建新合约文件的文件夹，然后选择New File。这样，您就可以在编辑区域中输入您的合约代码了。
+- 最后，您需要保存您的合约文件。您可以按Ctrl+S（Windows/Linux）或者Cmd+S（Mac）快捷键，或者在菜单栏中选择File -> Save。然后，您需要给您的合约文件起一个合适的名字，并且确保它的扩展名是.sol。例如，您可以将您的合约文件命名为MyContract.sol。
+
+这就是在Sublime Text中创建一个新的合约文件的方法。如果您还有其他问题，欢迎继续向我提问。😊
+
+源: 与必应的对话， 2023/8/22
+(1) Sublime Text - Text Editing, Done Right. https://www.sublimetext.com/.
+(2) Download - Sublime Text. https://www.sublimetext.com/3.
+(3) Download - Sublime Text. https://www.sublimetext.com/download.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+哦，我明白了。你说的是Sublime Text的侧边栏，它可以显示你打开的文件和文件夹的结构。这个侧边栏是可以显示或隐藏的，你可以用以下方法来控制它：
+
+- 使用图形用户界面（GUI）：点击视图菜单，然后选择侧边栏菜单项，再点击显示侧边栏或隐藏侧边栏。
+- 使用快捷键：在Windows系统上，按Ctrl + K，然后按Ctrl + B；在Mac系统上，按Command + K，然后按Command + B。
+- 使用插件或扩展：有一些插件或扩展可以让你更方便地控制侧边栏，比如[SideBarEnhancements](^3^)，它可以提供一些额外的功能，比如移动到回收站、用其他程序打开、复制到剪贴板等等。
+
+我希望这些方法能够帮助你显示或隐藏Sublime Text的侧边栏，也能让你更好地浏览和管理你的文件和文件夹。如果你还有其他问题，欢迎随时向我提问。😊
+
+顺便说一下，我注意到你的截图里有一个YouTube视频教程，是关于如何构建以太坊DApp（去中心化应用开发教程）的。这个视频看起来很有趣，你是想学习如何开发自己的DApp吗？如果是的话，我可以给你一些资源和建议，比如[这个网站](^1^)，它提供了一些Sublime Text的教程和技巧，可以让你更高效地编写代码。😊
+
+源: 与必应的对话， 2023/8/20
+(1) GitHub - titoBouzout/SideBarEnhancements: Enhancements to Sublime Text .... https://github.com/titoBouzout/SideBarEnhancements.
+(2) How do show file navigation sidebar in Sublime Text? - w3schools.io. https://www.w3schools.io/editor/sublime-text-show-hide-sidebar/.
+(3) How to use sidebar with the keyboard in Sublime Text 2 and 3?. https://stackoverflow.com/questions/15178358/how-to-use-sidebar-with-the-keyboard-in-sublime-text-2-and-3.
+(4) undefined. http://www.sublimetext.com/.
+
+
+

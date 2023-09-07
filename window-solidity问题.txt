@@ -1,0 +1,140 @@
+## 必应
+你好，这是Bing。我很高兴你对Solidity感兴趣。Solidity是一种用于编写智能合约的高级编程语言，它可以运行在以太坊等区块链平台上。要在Windows上安装Solidity，你有以下几种选择：
+- Windows Linux 子系统: 你可以使用Windows 10提供的内置Linux子系统功能，在Windows上运行Ubuntu终端。你需要先在控制面板中启用开发者模式和Windows Linux子系统功能，然后从Microsoft商店安装Ubuntu LTS 18.04，并设置好。接下来，你可以在Ubuntu终端中安装和使用Solidity编译器solc，就像在Linux系统上一样 。
+- Remix: Remix是一个在线的集成开发环境，你可以在浏览器中编写、编译和测试Solidity合约。你不需要安装任何东西，只要访问Remix网站就可以开始使用。Remix也有一个本地版本，你可以下载.zip文件并在你的电脑上运行。
+- npm / Node.js: 如果你想在Node.js项目中使用Solidity编译器solcjs，你可以通过npm安装它。注意，solcjs的功能相对于其他选项都要少，而且它的命令行选项与solc和一些工具（如geth）是不兼容的。要安装solcjs，你可以运行以下命令：
+
+npm install -g solc
+
+- Docker: 如果你想使用Docker镜像来运行Solidity编译器solc，你可以从ethereum组织获取solc镜像。你可以使用stable标签来获取最新的发布版本，或者使用nightly标签来获取可能不稳定的开发分支版本。要使用Docker镜像来编译Solidity文件，你可以挂载一个本地文件夹作为输入和输出，并指定要编译的合约。例如：
+
+docker run -v /local/path:/sources ethereum/solc:stable -o /sources/output --abi --bin /sources/Contract.sol
+
+- Visual Studio: 如果你想使用Visual Studio作为你的开发环境，你可以从源代码编译Solidity，并生成一个solidity.sln文件。然后，你可以用Visual Studio打开这个文件，并进行编译和调试。
+希望这些信息对你有帮助。如果你有任何其他问题，请随时问我😊。
+
+------------------------------------
+你好，这是Bing。我很高兴你对Windows Linux 子系统安装教程感兴趣。我为你搜索了一些相关的网页和文章，你可以参考以下的步骤：
+
+- 第一种方法是使用命令行界面安装。这种方法比较简单和快速，但是需要你有一些基本的PowerShell或Windows命令提示符的知识。具体的操作如下：
+    - 在管理员模式下打开PowerShell或Windows命令提示符，输入以下命令，启用适用于Linux的Windows子系统功能，并重启电脑。
+    ```bash
+    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+    ```
+    - 选择你喜欢的Linux发行版，例如Ubuntu、Debian、SUSE等，并从[Microsoft商店](^1^)下载并安装。
+    - 打开安装好的Linux发行版，设置用户名和密码，等待文件解压缩和存储。
+    - 配置软件源，使用国内的镜像站点来加速下载和更新。你可以参考[清华大学开源软件镜像站](^5^)的说明，修改你的`/etc/apt/sources.list`文件，使用清华的镜像源。
+    - 更新系统并安装你需要的软件包。你可以使用`apt-get`命令来管理你的软件包，例如：
+    ```bash
+    sudo apt-get update # 更新软件源
+    sudo apt-get upgrade # 更新已安装的软件包
+    sudo apt-get install vim # 安装vim编辑器
+    ```
+- 第二种方法是使用图形化界面安装。这种方法比较直观和友好，但是需要你安装一些额外的软件和配置。具体的操作如下：
+    - 在Windows设置中，打开“应用”选项卡，点击“启用或关闭Windows功能”，勾选“适用于Linux的Windows子系统”和“虚拟机平台”，并重启电脑。
+    - 选择你喜欢的Linux发行版，并从[Microsoft商店](^1^)下载并安装。
+    - 打开安装好的Linux发行版，设置用户名和密码，等待文件解压缩和存储。
+    - 安装Xorg、xfce4和xrdp等软件包，以支持图形化界面和远程桌面连接。你可以参考[这篇文章](^2^)的详细步骤。
+    - 在Windows中搜索“远程桌面连接”，输入你的Linux发行版的IP地址和端口号（默认为3390），点击“连接”按钮。
+    - 输入你之前设置的用户名和密码，登录到Linux发行版的图形化界面。
+
+希望这些信息对你有帮助。如果你还有其他问题，请随时问我😊。
+
+源: 与必应的对话， 2023/8/20
+(1) 安装 WSL | Microsoft Learn. https://learn.microsoft.com/zh-cn/windows/wsl/install.
+(2) undefined. https://mirrors.tuna.tsinghua.edu.cn/ubuntu/.
+(3) 安装 WSL | Microsoft Learn. https://learn.microsoft.com/zh-cn/windows/wsl/install.
+(4) 玩转 Windows 自带的 Linux 子系统 （图文指南） - 知乎专栏. https://zhuanlan.zhihu.com/p/258563812.
+(5) 如何在Win下安装linux子系统(WSL2)，并配置anaconda+pytorch深度学习环境的完整教程(30系列显卡包括RTX3090也 .... https://bing.com/search?q=Windows+Linux+%e5%ad%90%e7%b3%bb%e7%bb%9f%e5%ae%89%e8%a3%85%e6%95%99%e7%a8%8b.
+(6) 保姆级教程：Linux的windows10子系统ubuntu20.04LTS详细安装 - 知乎. https://zhuanlan.zhihu.com/p/348041371.
+******************************************
+******************************
+你好，这是Bing。我很高兴你对Docker安装Solidity的具体方法感兴趣。Docker是一种开源的应用容器引擎，可以让你在不同的平台上运行和管理Solidity编译器solc¹。要使用Docker安装Solidity，你可以参考以下的步骤：
+
+- 首先，你需要在你的电脑上安装和配置Docker环境。你可以从[Docker官网](^2^)下载和安装适合你的操作系统的Docker版本。你也可以参考[Docker教程](^3^)来了解Docker的基本概念和用法。
+- 然后，你需要从ethereum组织获取solc镜像。你可以使用stable标签来获取最新的发布版本，或者使用nightly标签来获取可能不稳定的开发分支版本⁴。要获取solc镜像，你可以运行以下命令：
+
+```bash
+docker pull ethereum/solc:stable # 获取最新的稳定版本
+docker pull ethereum/solc:nightly # 获取最新的开发版本
+```
+
+- 接下来，你可以使用Docker镜像来运行Solidity编译器solc，并传递相应的参数。例如，要查看solc的帮助信息，你可以运行以下命令：
+
+```bash
+docker run ethereum/solc:stable --help # 查看稳定版本的帮助信息
+docker run ethereum/solc:nightly --help # 查看开发版本的帮助信息
+```
+
+- 要使用Docker镜像来编译主机上的Solidity文件，请挂载一个本地文件夹作为输入和输出，并指定要编译的合约。例如，要编译Contract.sol文件，并生成二进制代码和ABI文件，你可以运行以下命令：
+
+```bash
+docker run -v /local/path:/sources ethereum/solc:stable -o /sources/output --abi --bin /sources/Contract.sol
+```
+
+- 你也可以使用标准的JSON接口来与solc交互。当使用这个接口时，不需要挂载任何目录，只要输入的JSON是自成一体的（即它没有引用任何外部文件）。例如，要使用标准输入和输出来编译Contract.sol文件，你可以运行以下命令：
+
+```bash
+docker run ethereum/solc:stable --standard-json < input.json > output.json
+```
+
+希望这些信息对你有帮助。如果你还有其他问题，请随时问我😊。
+
+源: 与必应的对话， 2023/8/20
+(1) 安装 Solidity 编译器 — Solidity 0.8.17 文档. https://docs.soliditylang.org/zh/v0.8.17/installing-solidity.html.
+(2) Docker 教程 | 菜鸟教程. https://www.runoob.com/docker/docker-tutorial.html.
+(3) 安装Solidity编译器 — Solidity 0.8.10 文档 - 开源地理空间 .... https://www.osgeo.cn/solidity/installing-solidity.html.
+(4) undefined. https://github.com/ethereum/remix-live/tree/gh-pages.
+(5) undefined. https://github.com/ethereum/homebrew-ethereum.git.
+(6) undefined. https://www.docker.com.
+(7) undefined. https://github.com/docker/docker-ce.
+
+
+-----------------------------------
+
+你好，这是Bing。你问的是不是要先下载Solidity编译器才能使用Sublime Text Ethereum package呢？如果是的话，答案是不一定。这个包本身不包含Solidity编译器，它只是提供了一些辅助功能，如语法高亮、代码补全、代码片段等。如果你只想使用这些功能，你不需要下载Solidity编译器。但是，如果你想在Sublime Text中编译和部署你的智能合约，你就需要下载Solidity编译器，并配置好相关的路径和参数。
+
+有几种方法可以在你的电脑上安装Solidity编译器，例如：
+
+- Remix: Remix是一个在线的集成开发环境，你可以在浏览器中编写、编译和测试Solidity合约。你不需要安装任何东西，只要访问[Remix网站]就可以开始使用。Remix也有一个本地版本，你可以下载.zip文件并在你的电脑上运行。
+- npm / Node.js: 如果你想在Node.js项目中使用Solidity编译器solcjs，你可以通过npm安装它。注意，solcjs的功能相对于其他选项都要少，而且它的命令行选项与solc和一些工具（如geth）是不兼容的。要安装solcjs，你可以运行以下命令：
+
+```bash
+npm install -g solc
+```
+
+- Docker: 如果你想使用Docker镜像来运行Solidity编译器solc，你可以从ethereum组织获取solc镜像。你可以使用stable标签来获取最新的发布版本，或者使用nightly标签来获取可能不稳定的开发分支版本。要使用Docker镜像来编译Solidity文件，你可以挂载一个本地文件夹作为输入和输出，并指定要编译的合约。例如：
+
+```bash
+docker run -v /local/path:/sources ethereum/solc:stable -o /sources/output --abi --bin /sources/Contract.sol
+```
+
+- Windows Linux 子系统: 你可以使用Windows 10提供的内置Linux子系统功能，在Windows上运行Ubuntu终端。然后，你可以在Ubuntu终端中安装和使用Solidity编译器solc，就像在Linux系统上一样。
+- Visual Studio: 如果你想使用Visual Studio作为你的开发环境，你可以从源代码编译Solidity，并生成一个solidity.sln文件。然后，你可以用Visual Studio打开这个文件，并进行编译和调试。
+
+希望这些信息对你有帮助。如果你还有其他问题，请随时问我😊。
+
+
+下载重启
+执行策略更改
+执行策略可帮助你防止执行不信任的脚本。更改执行策略可能会产生安全风险，如 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies 帮助主题所述。是否要更改执行策略?
+[Y] 是(Y)  [A] 全是(A)  [N] 否(N)  [L] 全否(L)  [S] 暂停(S)  [?] 帮助 (默认值为“N”): y
+PS C:\Users\Administrator> truffle version
+Truffle v5.11.2 (core: 5.11.2)
+Ganache v7.9.0
+Solidity v0.5.16 (solc-js)
+Node v18.17.1
+Web3.js v1.10.0
+PS C:\Users\Administrator> dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+部署映像服务和管理工具
+版本: 10.0.19041.844
+
+映像版本: 10.0.19044.2728
+
+启用一个或多个功能
+[==========================100.0%==========================]
+操作成功完成。
+PS C:\Users\Administrator> D
+
+

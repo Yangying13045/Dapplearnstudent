@@ -1,0 +1,20 @@
+Truffle是一个基于Node.js的以太坊智能合约开发框架，它可以帮助你编译、部署和测试你的合约。要在Windows系统上安装Truffle，你需要先安装Node.js 11或更高版本，然后在命令行中输入：
+
+`npm install -g truffle`
+
+这样就可以在全局环境下安装Truffle了。如果你遇到权限问题或其他错误，你可以参考以下的链接¹²³⁴⁵，里面有一些解决方法和详细的步骤。
+
+安装成功后，你可以使用`truffle version`命令来查看Truffle的版本信息。你也可以使用`truffle init`命令来创建一个空的Truffle项目，或者使用`truffle unbox`命令来下载一些预设的项目模板。
+
+Truffle是一个非常强大和方便的工具，它可以让你更专注于智能合约的逻辑和功能，而不用担心底层的细节。如果你想了解更多关于Truffle的用法和教程，你可以访问官方网站⁶或者阅读一些中文文档。祝你开发愉快！😊
+
+源: 与必应的对话， 2023/8/19
+(1) 安装 Truffle | Truffle 中文文档 - DApp 开发框架 | 深入浅出区块链. https://learnblockchain.cn/docs/truffle/getting-started/installation.html.
+(2) WIN10下node.js \ npm \ truffle的安装与配置 - 简书. https://www.jianshu.com/p/29834dbc8de3.
+(3) Windows下truffle环境搭建与TestRPC入门使用 - CSDN博客. https://blog.csdn.net/weixin_44346470/article/details/109306969.
+(4) [以太坊dApp全栈开发教程]Truffle：1.智能合约的编译与部署 - 知乎. https://zhuanlan.zhihu.com/p/83253046.
+(5) Truffle的安装 - 北漂的尘埃 - 博客园. https://www.cnblogs.com/shizhe99/p/15099440.html.
+(6) undefined. https://nodejs.org/en/download/.
+**********************************************************************************
+
+
