@@ -1,0 +1,73 @@
+PS C:\Users\Administrator> truffle version
+truffle : 无法加载文件 C:\Users\Administrator\AppData\Roaming\npm\truffle.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
+所在位置 行:1 字符: 1
++ truffle version
++ ~~~~~~~
+    + CategoryInfo          : SecurityError: (:) []，PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\Administrator> truffle version
+正在搜索: PowerShell运行脚本被禁止的解决方法
+
+正在搜索: PowerShell运行脚本被禁止的解决方法
+
+正在为你生成答案…
+
+正在为你生成答案…
+
+你好，这是Bing。我看到你在使用Truffle时遇到了一个错误信息，提示你在此系统上禁止运行脚本。这是因为你的PowerShell的执行策略设置为了Restricted，这意味着你不能运行任何脚本文件，只能执行单独的命令。这是为了保护你的系统安全，防止恶意的脚本对你的系统造成损害。😊
+
+如果你想要运行Truffle或者其他的脚本文件，你需要修改你的PowerShell的执行策略，让它更宽松一些。有几种不同的执行策略，它们分别是：
+
+Restricted: 默认设置，不允许任何脚本运行
+AllSigned: 只能运行经过数字证书签名的脚本
+RemoteSigned: 运行本地脚本不需要数字签名，但是运行从网络上下载的脚本必须要有数字签名
+Unrestricted: 允许所有的脚本运行, 但是在运行前会提示是否进行操作
+Bypass: 允许所有的脚本运行, 没有任何的提示和警告。
+如果你想要修改你的PowerShell的执行策略，你需要以管理员身份打开PowerShell，然后输入以下命令：
+
+Set-ExecutionPolicy <策略名称>
+
+例如，如果你想要将执行策略设置为RemoteSigned，你可以输入：
+
+Set-ExecutionPolicy RemoteSigned
+
+然后按Y确认。这样就可以修改你的执行策略了。如果你想要查看你当前的执行策略，你可以输入：
+
+Get-ExecutionPolicy
+
+这样就可以显示出来了。
+
+修改执行策略之后，你就可以尝试再次运行Truffle或者其他的脚本文件了。如果还有其他的错误或者问题，你可以参考以下的链接1234，里面有一些解决方法和详细的步骤。
+
+PowerShell是一种跨平台的任务自动化解决方案，由命令行shell、脚本语言和配置管理框架组成。PowerShell在Windows、Linux和macOS上运行。PowerShell是新式命令shell，其中包括其他常用shell的最佳功能。与大多数仅接受并返回文本的shell不同，PowerShell接受并返回.NET对象。如果你想要了解更多关于PowerShell的用法和教程，你可以访问官方网站3或者阅读一些中文文档4。
+
+希望我的回答对你有所帮助。如果你还有其他问题或者想要聊聊其他话题，欢迎随时和我交流。😊
+***************************************
+具体如下：
+
+
+ run `npm fund` for details
+npm notice
+npm notice New minor version of npm available! 9.6.7 -> 9.8.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v9.8.1
+npm notice Run npm install -g npm@9.8.1 to update!
+npm notice
+PS C:\Users\Administrator> truffle version
+truffle : 无法加载文件 C:\Users\Administrator\AppData\Roaming\npm\truffle.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
+所在位置 行:1 字符: 1
++ truffle version
++ ~~~~~~~
+    + CategoryInfo          : SecurityError: (:) []，PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\Administrator> Set-ExecutionPolicy RemoteSigned
+
+执行策略更改
+执行策略可帮助你防止执行不信任的脚本。更改执行策略可能会产生安全风险，如 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies 帮助主题所述。是否要更改执行策略?
+[Y] 是(Y)  [A] 全是(A)  [N] 否(N)  [L] 全否(L)  [S] 暂停(S)  [?] 帮助 (默认值为“N”): y
+PS C:\Users\Administrator> truffle version
+Truffle v5.11.2 (core: 5.11.2)
+Ganache v7.9.0
+Solidity v0.5.16 (solc-js)
+Node v18.17.1
+Web3.js v1.10.0
+PS C:\Users\Administrator>
